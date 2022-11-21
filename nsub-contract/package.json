@@ -1,0 +1,19 @@
+{
+  "name": "nsub",
+  "version": "1.0.0",
+  "license": "(MIT AND Apache-2.0)",
+  "scripts": {
+    "deploy": "cd contract && npm run deploy",
+    "build": "npm run build:contract",
+    "build:contract": "cd contract && npm run build",
+    "test": "npm run test:unit && npm run test:integration",
+    "test:unit": "cd contract && npm test",
+    "test:integration": "cd integration-tests && npm test -- -- \"../contract/build/nsub.wasm\"",
+    "watch": "copy-and-watch --watch /mnt/01D87D5015E4C700/www/wpr/app/public/wp-content/plugins/nsub-wp/** /home/cuong/projects/nsub/code/nsub/nsub-wp-plugin/ & copy-and-watch --watch /home/cuong/projects/nsub/code/nsub/frontend/dist/*.{css,js} /mnt/01D87D5015E4C700/www/wpr/app/public/wp-content/plugins/nsub-wp/asset/ "
+  },
+  "devDependencies": {
+    "near-cli": "^3.3.0",
+    "copy-and-watch": "latest"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,54 @@
+.nws-modal-wrapper{
+    z-index: 99999999 !important;
+}
+.nsub-btn{
+    min-width: 200px;
+    max-width: 220px;
+    height: auto;
+    text-transform: none;
+    padding: 12px 6px;
+    text-align: center;
+    cursor: pointer;
+
+    color: rgb(255, 255, 255);
+    margin: 24px 0px 0px;
+    border: 2px solid;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 100ms ease 0s;
+    font-size: 14px;
+    word-break: keep-all;
+
+    margin: 15px auto !important;
+}
+
+.nsub-btn:hover{
+    border-color: rgb(0, 127, 230);
+    background: rgb(0, 127, 230);
+}
+
+.nsub-logout-btn,.nsub-login-btn, .nsub-paytounlock{
+    border-color: rgb(0, 114, 206);
+    background: rgb(0, 114, 206);
+    margin: 0px;
+}
+
+.nsub-logout-btn{
+    margin: 0 auto;
+    display:block;
+    background: red;
+    border-color: red;
+}
+
+.nsub-donate-btn{
+    min-width: 120px;
+    padding: 8px 5px;
+    border: 1px solid #FF9933;
+    border-radius: 5px;
+    background-image: linear-gradient(#fff0a8, #f9b421);
+    color:#08061F !important;
+}
+
+.nsub-donate-btn:hover{
+    background-image: linear-gradient(#f1df80, #eca200);
+}
